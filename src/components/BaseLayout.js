@@ -5,9 +5,9 @@ class BaseLayout extends Component{
   render(){
     let navStyle={
    'backgroundColor': 'red',
-   'height': '150px',
-   'padding':' 20px',
-   'color': 'white',
+   'padding':' 10px',
+   'height': '140px',
+   'color': 'white'
  }
  return(
 
