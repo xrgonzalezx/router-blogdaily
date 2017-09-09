@@ -33,10 +33,10 @@ import {Link} from 'react-router-dom'
         }
       })
       .then(response => {
-        console.log(response, "yay");
+        console.log(response, "yesss");
       })
       .catch(err => {
-        console.log(err, "boo!");
+        console.log(err, "noooot");
       });
       this.setState({
         name: '',

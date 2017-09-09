@@ -15,7 +15,7 @@ class BaseLayout extends Component{
      <section style={navStyle}>
      <ul className="nav navbar-nav">
        <li>
-         <NavLink to='/' activeStyle={{color:"blue"}}>Home</NavLink>
+         <NavLink to='/' activeStyle={{color:"yellow"}}>Home</NavLink>
        </li>
        <li>
          <NavLink to='/create' activeClassName="selected">Create Post</NavLink>
