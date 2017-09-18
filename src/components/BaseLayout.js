@@ -4,7 +4,9 @@ import {NavLink} from 'react-router-dom';
 class BaseLayout extends Component{
   render(){
     let navStyle={
-   'backgroundColor': 'red',
+   fontFamily:"Times",
+    fontSize:"1.5em",
+    padding:0,
    'padding':' 10px',
    'height': '140px',
    'color': 'white'
@@ -13,9 +15,9 @@ class BaseLayout extends Component{
 
    <div>
      <section style={navStyle}>
-     <ul className="nav navbar-nav">
+     <ul class="nav navbar-nav navbar-right">
        <li>
-         <NavLink to='/' activeStyle={{color:"yellow"}}>Home</NavLink>
+         <NavLink to='/' activeStyle={{color:"white"}}>Home</NavLink>
        </li>
        <li>
          <NavLink to='/create' activeClassName="selected">Create Post</NavLink>

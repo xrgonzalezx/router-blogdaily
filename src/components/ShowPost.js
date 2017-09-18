@@ -22,17 +22,17 @@ import React, {Component} from 'react';
   }
   render(){
     let formStyle={
-      'backgroundColor': 'blue',
-      'height': '150px',
+      'height': '200px',
       'padding':' 20px',
-      'color': 'white'
+      'color': 'black',
+      'margin-top': '300px'
     }
     let {info} = this.state
     return(
-      <div style={formStyle}>
-        <h1>{info.title}</h1>
+      <div className="card" style={formStyle}>
+        <h1>Blog Title:{info.title}</h1>
         <h1>Posted by:{info.name}</h1>
-          <h1>{info.blog}</h1>
+          <h1>Blog:{info.blog}</h1>
       </div>
     )
   }

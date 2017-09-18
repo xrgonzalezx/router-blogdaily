@@ -64,25 +64,27 @@ import {Link} from 'react-router-dom'
 
   render(){
     let blogFormStyle={
-      'backgroundColor': 'blue',
       'padding':' 20px',
       'height': '150px',
-      'color': 'white'
+      'margin-top': '70px',
+      'width':'350px',
+      'margin-left': '5px',
+      'color': 'black'
     }
     return(
     <div style={blogFormStyle} >
       <form >
     <div className="form-group">
       <label>Name:</label>
-      <input className="form-input" placeholder="enter name here" onChange={this.handleNameChange} value={this.state.name} type="text" ></input>
+      <input className="form-input"  onChange={this.handleNameChange} value={this.state.name} type="text" ></input>
     </div>
     <div className="form-group">
       <label>Title:</label>
-      <input className="form-input" placeholder="blogs title" onChange={this.handleTitleChange} value={this.state.title} type="text"></input>
+      <input className="form-input"  onChange={this.handleTitleChange} value={this.state.title} type="text"></input>
     </div>
     <div className="form-group">
       <label>BLOG:</label>
-      <input className="form-input" rows="3" onChange={this.handleBlogChange} value={this.state.blog}></input>
+      <input className="form-input"  rows="3" onChange={this.handleBlogChange} value={this.state.blog}></input>
     </div>
     <button className="btn btn-primary" type="submit"  onClick={this.addToList}>Submit</button>
   </form>

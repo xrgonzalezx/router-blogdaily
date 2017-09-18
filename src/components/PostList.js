@@ -22,17 +22,16 @@ class PostList extends Component{
   }
   render(){
     let postStyle={
-      'backgroundColor': 'white',
       'height': '150px',
       'padding':' 20px',
-      'color': 'white'
+      'color': 'black'
     }
 
     let blogs = this.state.blogpost
     let lists = blogs.map((post) => {
       return(
-        <div key={post._id} style={postStyle}>
-          <Link to={`/show/${post._id}`}>{post.title}</Link>
+        <div className="card" key={post._id} style={postStyle}>
+          <h1><Link to={`/show/${post._id}`}>{post.title}</Link></h1>
         </div>
       )
     })
