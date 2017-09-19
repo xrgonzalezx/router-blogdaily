@@ -69,8 +69,9 @@ import {Link} from 'react-router-dom'
       'margin-top': '70px',
       'width':'350px',
       'margin-left': '5px',
-      'color': 'black'
+      'color': 'blue'
     }
+
     return(
     <div style={blogFormStyle} >
       <form >
@@ -86,7 +87,7 @@ import {Link} from 'react-router-dom'
       <label>BLOG:</label>
       <input className="form-input"  rows="3" onChange={this.handleBlogChange} value={this.state.blog}></input>
     </div>
-    <button className="btn btn-primary" type="submit"  onClick={this.addToList}>Submit</button>
+    <button onClick={this.addToList} className="btn"><Link to="/">Submit</Link></button>
   </form>
 
       </div>

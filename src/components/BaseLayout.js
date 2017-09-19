@@ -15,17 +15,13 @@ class BaseLayout extends Component{
 
    <div>
      <section style={navStyle}>
-     <ul class="nav navbar-nav navbar-right">
-       <li>
+     <nav className="navbar navbar-toggleable-md fixed-top navbar-light">
+     <div className="navbar-nav">
          <NavLink to='/' activeStyle={{color:"white"}}>Home</NavLink>
-       </li>
-       <li>
          <NavLink to='/create' activeClassName="selected">Create Post</NavLink>
-       </li>
-       <li>
          <NavLink to='/post' activeClassName="selected">Show Posts</NavLink>
-       </li>
-     </ul>
+      </div>
+     </nav>
      </section>
      <section>
        {this.props.children}

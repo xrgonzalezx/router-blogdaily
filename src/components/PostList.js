@@ -22,21 +22,27 @@ class PostList extends Component{
   }
   render(){
     let postStyle={
-      'height': '150px',
-      'padding':' 20px',
-      'color': 'black'
+      'height': '120px',
+      'padding':' 10px',
+      'color': 'black',
+      'margin-bottom': '30px',
+      'box-shadow': '5px 5px 20px black',
+      'margin-bottom': '55px',
+      'margin-top': '300px'
     }
 
     let blogs = this.state.blogpost
     let lists = blogs.map((post) => {
       return(
         <div className="card" key={post._id} style={postStyle}>
-          <h1><Link to={`/show/${post._id}`}>{post.title}</Link></h1>
+          <p>Blog Card</p>
+          <h3><Link to={`/show/${post._id}`}>{post.title}</Link></h3>
+          <h5><Link to={`/show/${post._id}`}>{post.name}</Link></h5>
         </div>
       )
     })
     return(
-      <div >
+      <div className="listWrapper" >
       {lists}
       </div>
     )

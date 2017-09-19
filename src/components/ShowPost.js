@@ -24,7 +24,7 @@ import React, {Component} from 'react';
     let formStyle={
       'height': '200px',
       'padding':' 20px',
-      'color': 'black',
+      'color': 'blue',
       'margin-top': '300px'
     }
     let {info} = this.state

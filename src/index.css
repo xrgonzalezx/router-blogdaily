@@ -2,14 +2,26 @@ body {
   margin: 0;
   padding: 0;
   font-family: times;
-  background-image:url(https://s3.favim.com/orig/40/cat-cute-fluffy-laptop-Favim.com-332805.jpg);
+  background-image:url(http://www.funnyjunksite.com/pictures/wp-content/uploads/2015/08/Kung-Fu-Cats-Image.jpg);
   background-size: 100%;
 
 }
 h1{
   font-family: 'time';
-  color: green;
+  color: blue;
   font-size: 20px;
   line-height: 50px;
   font-size: 4vw;
+}
+
+.listWrapper{
+  display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+ul {
+  list-style-type: none;
 }
