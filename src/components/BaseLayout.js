@@ -17,9 +17,15 @@ class BaseLayout extends Component{
      <section style={navStyle}>
      <nav className="navbar navbar-toggleable-md fixed-top navbar-light">
      <div className="navbar-nav">
-         <NavLink to='/' activeStyle={{color:"white"}}>Home</NavLink>
-         <NavLink to='/create' activeClassName="selected">Create Post</NavLink>
+        <div className="nav-left">
+         <NavLink to='/' activeStyle={{color:"white"}}>PollyBlog</NavLink>
+        </div>
+        <div className="nav-middle">
+         <NavLink to='/create' activeClassName="selected">Create Post </NavLink>
+         </div>
+        <div className="nav-right">
          <NavLink to='/post' activeClassName="selected">Show Posts</NavLink>
+        </div>
       </div>
      </nav>
      </section>

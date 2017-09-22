@@ -22,6 +22,10 @@ import {Link} from 'react-router-dom'
         'title': e.target.value,
         'blog': e.target.value
       });
+
+      // You can use this.props.history.push('/'); at the end of a fetch in your .then() methods to push to a particular endpoint, such as /.
+
+      this.props.history.push('/')
       let listItem = JSON.stringify(this.state);
 
       fetch("https://tiny-lasagna-server.herokuapp.com/collections/blogger/", {
@@ -87,7 +91,7 @@ import {Link} from 'react-router-dom'
       <label>BLOG:</label>
       <input className="form-input"  rows="3" onChange={this.handleBlogChange} value={this.state.blog}></input>
     </div>
-    <button onClick={this.addToList} className="btn"><Link to="/">Submit</Link></button>
+    <button onClick={this.addToList} className="btn">Submit</button>
   </form>
 
       </div>

@@ -22,8 +22,8 @@ class PostList extends Component{
   }
   render(){
     let postStyle={
-      'height': '120px',
-      'padding':' 10px',
+      'height': '180px',
+      'padding':' 2px',
       'color': 'black',
       'margin-bottom': '30px',
       'box-shadow': '5px 5px 20px black',
